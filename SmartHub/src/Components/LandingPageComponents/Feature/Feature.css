@@ -1,0 +1,40 @@
+.feature {
+    width: 18%;
+    background-color: #181C14;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .feature h3 {
+    text-align: center;
+  }
+  
+  .feature-icon img {
+    width: 100px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .feature {
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 15px;
+      padding: 10px;
+    }
+  
+    .feature-icon img {
+      width: 50px;
+    }
+  
+    .feature h3 {
+      text-align: left;
+      font-size: 1rem;
+    }
+  }
+  
