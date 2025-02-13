@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./Header.css"
-import MultiDropdown from '../../GlobalComponents/DropDown/Dropdown';
+import MultiDropdown from '../../GlobalComponents/DropDown/DropDown';
 import hamburger from "../../../assets/hamburger-menu.svg";
 import resourcelibrary from "../../../assets/resourcelibrary.svg";
 import genre from "../../../assets/genre.svg";
