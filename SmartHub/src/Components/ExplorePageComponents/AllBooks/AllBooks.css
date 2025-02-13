@@ -1,0 +1,135 @@
+/* Overall section styling */
+.all-books-section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for the "All Books" heading */
+.all-books-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid red;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Books Grid */
+.all-books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    perspective: 1000px; /* Adds depth for a 3D effect */
+}
+
+/* Book Card */
+.single-book-card {
+    background: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    height: 300px;
+    position: relative;
+    transform: scale(1);
+    will-change: transform;
+}
+
+/* Book Cover */
+.single-book-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Disney+ Inspired Hover Effect */
+.single-book-card:hover {
+    transform: scale(1.4) rotateY(5deg); /* Enlarges with slight tilt */
+    z-index: 10;
+    position: relative;
+    transition: transform 0.4s ease-in-out 0.5s, box-shadow 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+/* Book Info (Hidden Initially) */
+.single-book-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45%; /* Covers lower portion */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out 0.9s, transform 0.3s ease-in-out 0.9s;
+}
+
+/* Title */
+.single-book-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Description */
+.single-book-description {
+    font-size: 13px;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+/* Genre */
+.single-book-genre {
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0.9;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.single-book-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.single-buy-now {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.single-wishlist {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Show Info on Hover After Zoom */
+.single-book-card:hover .single-book-info {
+    opacity: 1;
+    transform: translateY(0);
+}

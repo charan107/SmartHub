@@ -1,0 +1,107 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+  }
+  
+  /* Container layout */
+  .login-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .login-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  }
+  
+  .login-form {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: white;
+  }
+  
+  .input-field1 {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: white;
+  }
+  
+  .input-field1::placeholder {
+    color: #aaa;
+  }
+  
+  /* Button styling */
+  .dark-button {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 2px solid #444;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .dark-button:hover {
+    background-color: #444;
+    border-color: #666;
+    transform: translateY(-2px);
+  }
+  
+  .dark-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  }
+  
+  .dark-button:active {
+    background-color: #333;
+    transform: translateY(0);
+  }
+  /* Register Section Styling */
+.register-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register-section p {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.register-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.register-button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}

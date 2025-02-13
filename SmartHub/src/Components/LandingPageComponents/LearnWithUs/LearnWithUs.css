@@ -1,0 +1,157 @@
+.learn-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    background: url('../assets/background.jpg') no-repeat center center/cover;
+  }
+  
+  /* Semi-transparent overlay for the background */
+  .learn-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust opacity */
+    z-index: 1; /* Ensures it is behind text */
+  }
+  
+  /* Centered content container */
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    z-index: 2; /* Keeps content in front of the overlay */
+    text-align: center;
+    width: 100%; /* Ensure content doesn't span full width */
+    padding: 20px;
+    height: 50%; /* Ensure content takes 50% of the height */
+    box-sizing: border-box;
+  }
+  .content h1{
+    width: 50%;
+  }
+  h1 span{
+    color:#4635B1;
+  }
+  /* Styling for h2 */
+  .discover-heading {
+    font-size: 2rem;
+    color: white; /* Lime green for the title */
+    margin-bottom: 20px;
+    font-weight: 100;
+  }
+  
+  /* Styling for h1 */
+  .library-heading {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .input-container{
+    position: relative;
+  }
+  /* Input field styling */
+.input-field {
+  padding: 25px 25px;
+  padding-left: 60px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  background: #181C14;
+  color: #fff;
+  font-size: 14px;
+  outline:none;
+  width: 770px;
+  transition: all 0.3s ease;
+}
+.search-icon {
+  position: absolute;
+  left: 10px; /* Position the icon to the left inside the input */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the icon */
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(26, 115, 232, 0.5);
+}
+
+/* Left sidebar styling */
+.Carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  width: 100%; /* Ensure sidebar spans full width */
+  height: 50%; /* Sidebar will take the remaining 50% height */
+  box-sizing: border-box;
+  text-align: left;
+  z-index: 2;
+
+}
+
+/* Left-aligned heading for trending topics */
+.heading-left h3 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: left;
+  margin-top: 20px;
+}/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .learn-container {
+    flex-direction: column; /* Stack content and sidebar vertically */
+    padding: 10px;
+    height: auto; /* Allow content to adjust the height based on screen size */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    background: url('../assets/mobile-library.jpg') no-repeat center center/cover;
+  }
+  
+  .content {
+    padding-right: 0;
+    height: auto; /* Adjust height based on content */
+      box-sizing: border-box;
+      overflow: visible; /* Allow content to overflow vertically if necessary */
+    }
+  
+    .discover-heading {
+      font-size: 1.5rem; /* Smaller text for mobile */
+    }
+  
+    .library-heading {
+      font-size: 2.5rem;
+    }
+  
+    .input-container {
+      margin-top: 15px;
+    }
+  
+    .input-field {
+        padding: 15px 20px; /* Reduce padding */
+        font-size: 0.9rem; /* Smaller font size */
+        width: 100%; /* Take up full width */
+        padding-left: 40px; /* Adjust padding on the left */
+    }
+  
+    .search-icon {
+      width: 25px; /* Adjust icon size */
+    }
+  
+    .Carousel {
+      width: 100%; /* Sidebar takes full width on small screens */
+      margin-top: 20px; /* Adds space between content and sidebar */
+    }
+}

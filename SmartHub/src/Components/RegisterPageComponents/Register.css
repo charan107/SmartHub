@@ -1,0 +1,76 @@
+/* Container layout */
+.registration-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .registration-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  }
+  
+  .registration-form {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: white;
+  }
+  
+  .input-field1 {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: white;
+  }
+  
+  .input-field1::placeholder {
+    color: #aaa;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  /* Button styling */
+  .dark-button {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 2px solid #444;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .dark-button:hover {
+    background-color: #444;
+    border-color: #666;
+    transform: translateY(-2px);
+  }
+  
+  .dark-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  }
+  
+  .dark-button:active {
+    background-color: #333;
+    transform: translateY(0);
+  }
+  
